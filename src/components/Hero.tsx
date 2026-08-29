@@ -6,7 +6,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import resume from "../assets/AnushikaKapoor_Resume.pdf";
-import profile from "../assets/profile.png";
+import profile from "../assets/image.png";
 
 const highlights = [
   "Full-Stack & Mobile",
