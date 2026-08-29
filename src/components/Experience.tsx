@@ -3,7 +3,7 @@ import {
   CalendarDays,
   Sparkles,
   Layers,
-  MapPin,
+  
   TrendingUp,
 } from "lucide-react";
 
