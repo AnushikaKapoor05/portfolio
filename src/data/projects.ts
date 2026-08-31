@@ -9,6 +9,7 @@ export interface Project {
   highlights: string[];
   technologies: string[];
   github?: string;
+  livedemo?: string;
   featured?: boolean;
 }
 
@@ -55,40 +56,49 @@ export const projects: Project[] = [
   {
     id: "ijob",
     number: "02",
-    title: "iJob",
-    category: "Mobile · Full Stack",
-
+    title: "iJob AI",
+    category: "AI · Mobile · Full Stack",
+  
     description:
-      "A cross-platform job application platform designed around persistent application tracking and multi-role workflows.",
-
+      "A deployed AI-powered recruitment platform and career copilot built for job seekers and recruiters across Web and Mobile.",
+  
     problem:
-      "Job seekers need a reliable way to track applications while different user roles require different workflows and access.",
-
+      "Job seekers often rely on multiple disconnected tools for resume optimization, cover letters, interview preparation, career guidance, and job discovery, while recruiters need streamlined tools for managing hiring workflows.",
+  
     solution:
-      "Built a Flutter application backed by Firebase Authentication and Firestore, with real-time synchronization and persistent application tracking.",
-
+      "Built and deployed a cross-platform Flutter application powered by Firebase and Google Gemini AI, combining AI career assistance, ATS resume analysis, recruitment workflows, and real-time job marketplace functionality.",
+  
     highlights: [
-      "Single Flutter codebase for Android and iOS",
-      "Firebase Authentication",
-      "Firestore real-time listeners",
-      "Offline-aware data handling",
-      "Persistent application tracking",
-      "Multi-role authentication flows",
+      "Deployed Web + Mobile application",
+      "Google Gemini AI integration",
+      "Real-time ATS Resume Match Scoring",
+      "1-Tap AI Cover Letter Generator",
+      "STAR-Method Interview Simulator",
+      "Conversational AI Career Coach",
+      "AI-powered Job Description Writer",
+      "Recruiter applicant tracking and filtering",
+      "Real-time Cloud Firestore synchronization",
+      "WhatsApp and Email contact integration",
     ],
-
+  
     technologies: [
       "Flutter",
       "Dart",
+      "Google Gemini AI",
       "Firebase",
-      "Firestore",
+      "Cloud Firestore",
       "Authentication",
     ],
-
+  
     github:
       "https://github.com/AnushikaKapoor05/iJob",
-
+  
+    livedemo:
+      "https://ijob1205-1205.web.app/",
+  
     featured: true,
   },
+  
 
   {
     id: "financial-intelligence",
