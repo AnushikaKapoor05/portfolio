@@ -9,7 +9,7 @@ export interface Project {
   highlights: string[];
   technologies: string[];
   github?: string;
-  livedemo?: string;
+  liveDemo?: string;
   featured?: boolean;
 }
 
@@ -58,16 +58,16 @@ export const projects: Project[] = [
     number: "02",
     title: "iJob AI",
     category: "AI · Mobile · Full Stack",
-  
+
     description:
       "A deployed AI-powered recruitment platform and career copilot built for job seekers and recruiters across Web and Mobile.",
-  
+
     problem:
       "Job seekers often rely on multiple disconnected tools for resume optimization, cover letters, interview preparation, career guidance, and job discovery, while recruiters need streamlined tools for managing hiring workflows.",
-  
+
     solution:
       "Built and deployed a cross-platform Flutter application powered by Firebase and Google Gemini AI, combining AI career assistance, ATS resume analysis, recruitment workflows, and real-time job marketplace functionality.",
-  
+
     highlights: [
       "Deployed Web + Mobile application",
       "Google Gemini AI integration",
@@ -80,7 +80,7 @@ export const projects: Project[] = [
       "Real-time Cloud Firestore synchronization",
       "WhatsApp and Email contact integration",
     ],
-  
+
     technologies: [
       "Flutter",
       "Dart",
@@ -89,16 +89,15 @@ export const projects: Project[] = [
       "Cloud Firestore",
       "Authentication",
     ],
-  
+
     github:
       "https://github.com/AnushikaKapoor05/iJob",
-  
-    livedemo:
+
+    liveDemo:
       "https://ijob1205-1205.web.app/",
-  
+
     featured: true,
   },
-  
 
   {
     id: "financial-intelligence",
@@ -133,9 +132,6 @@ export const projects: Project[] = [
       "Plotly",
       "SQL",
     ],
-
-    // No public GitHub repository
-    // because this was an internship/internal project.
 
     featured: true,
   },
