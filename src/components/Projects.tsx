@@ -62,7 +62,6 @@ export default function Projects() {
 
                 {/* ================= PROJECT CONTENT ================= */}
                 <div>
-
                   {/* Title & Featured Badge */}
                   <div className="flex flex-wrap items-center gap-3">
                     <h3 className="text-2xl font-black tracking-tight text-neutral-950 sm:text-3xl">
@@ -113,7 +112,7 @@ export default function Projects() {
                 {/* ================= PROJECT ACTIONS ================= */}
                 <div className="flex shrink-0 flex-wrap gap-2 pt-2 lg:flex-col lg:items-stretch lg:pt-0">
 
-                  {/* Live Demo */}
+                  {/* ================= LIVE DEMO ================= */}
                   {project.liveDemo && (
                     <a
                       href={project.liveDemo}
@@ -121,18 +120,15 @@ export default function Projects() {
                       rel="noreferrer"
                       onClick={(e) => e.stopPropagation()}
                       aria-label={`View live demo of ${project.title}`}
-                      className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-neutral-900 bg-neutral-900 px-5 py-3 text-sm font-bold text-white shadow-sm transition-all duration-200 hover:bg-white hover:text-neutral-950 hover:shadow-md"
+                      className="inline-flex items-center justify-center gap-2.5 rounded-full border-2 border-neutral-900 bg-white px-5 py-3 text-sm font-bold text-neutral-950 shadow-sm transition-all duration-200 hover:bg-white hover:text-neutral-950 focus:bg-white focus:text-neutral-950 active:bg-white active:text-neutral-950 hover:shadow-md"
                     >
                       Live Demo
 
-                      <ArrowUpRight
-                        size={16}
-                        className="transition-transform duration-200 hover:translate-x-0.5 hover:-translate-y-0.5"
-                      />
+                      <ArrowUpRight size={16} />
                     </a>
                   )}
 
-                  {/* GitHub */}
+                  {/* ================= GITHUB ================= */}
                   {project.github && (
                     <a
                       href={project.github}
@@ -140,7 +136,7 @@ export default function Projects() {
                       rel="noreferrer"
                       onClick={(e) => e.stopPropagation()}
                       aria-label={`View ${project.title} on GitHub`}
-                      className="inline-flex items-center justify-center gap-2.5 rounded-full border-2 border-neutral-900 bg-white px-5 py-3 text-sm font-bold text-neutral-950 shadow-sm transition-all duration-200 hover:bg-neutral-900 hover:text-white hover:shadow-md"
+                      className="inline-flex items-center justify-center gap-2.5 rounded-full border-2 border-neutral-900 bg-white px-5 py-3 text-sm font-bold text-neutral-950 shadow-sm transition-all duration-200 hover:bg-white hover:text-neutral-950 focus:bg-white focus:text-neutral-950 active:bg-white active:text-neutral-950 hover:shadow-md"
                     >
                       <FontAwesomeIcon
                         icon={faGithub}
@@ -149,10 +145,7 @@ export default function Projects() {
 
                       <span>GitHub Code</span>
 
-                      <ArrowUpRight
-                        size={16}
-                        className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                      />
+                      <ArrowUpRight size={16} />
                     </a>
                   )}
                 </div>
@@ -183,7 +176,6 @@ export default function Projects() {
             <ArrowUpRight size={14} />
           </a>
         </div>
-
       </div>
 
       {/* ================= PROJECT DETAILS MODAL ================= */}

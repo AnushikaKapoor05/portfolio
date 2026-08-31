@@ -1,4 +1,11 @@
-import { ArrowDown, ArrowUpRight, Download, MapPin, Sparkles } from "lucide-react";
+import {
+  ArrowDown,
+  ArrowUpRight,
+  Download,
+  MapPin,
+  Sparkles,
+} from "lucide-react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -21,7 +28,7 @@ export default function Hero() {
       id="home"
       className="relative overflow-hidden bg-white text-neutral-900"
     >
-      {/* Background grid */}
+      {/* ================= BACKGROUND GRID ================= */}
       <div
         className="pointer-events-none absolute inset-0 opacity-40"
         style={{
@@ -38,7 +45,7 @@ export default function Hero() {
       <div className="relative mx-auto max-w-7xl px-6 pb-20 pt-28 sm:px-8 sm:pb-28 sm:pt-32 lg:px-10 lg:pb-32 lg:pt-36">
         <div className="grid items-center gap-16 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20">
 
-          {/* LEFT SIDE */}
+          {/* ================= LEFT SIDE ================= */}
           <div>
 
             {/* Eyebrow */}
@@ -59,18 +66,22 @@ export default function Hero() {
             {/* Tagline */}
             <p className="mt-5 max-w-3xl text-2xl font-bold leading-tight tracking-tight text-neutral-800 sm:text-3xl">
               Bridging
-              <span className="text-neutral-500"> core computer science </span>
+              <span className="text-neutral-500">
+                {" "}
+                core computer science{" "}
+              </span>
               with scalable, product-ready systems.
             </p>
 
             {/* Description */}
             <p className="mt-7 max-w-3xl text-lg font-medium leading-8 text-neutral-700 sm:text-xl sm:leading-9">
-              Computer Science undergraduate at SRM University, Delhi-NCR. I architect reliable 
-              end-to-end applications — from responsive web and mobile interfaces to backend microservices, 
-              real-time databases, and AI-driven predictive pipelines.
+              Computer Science undergraduate at SRM University, Delhi-NCR. I
+              architect reliable end-to-end applications — from responsive web
+              and mobile interfaces to backend microservices, real-time
+              databases, and AI-driven predictive pipelines.
             </p>
 
-            {/* Highlight pills */}
+            {/* ================= HIGHLIGHT PILLS ================= */}
             <div className="mt-6 flex flex-wrap items-center gap-2.5">
               {highlights.map((item) => (
                 <span
@@ -82,51 +93,65 @@ export default function Hero() {
               ))}
             </div>
 
-            {/* Location & Availability Status */}
+            {/* ================= LOCATION & AVAILABILITY ================= */}
             <div className="mt-6 flex flex-wrap items-center gap-4 text-sm font-medium text-neutral-600 sm:text-base">
               <div className="flex items-center gap-2">
-                <MapPin size={18} strokeWidth={2} className="text-neutral-700" />
+                <MapPin
+                  size={18}
+                  strokeWidth={2}
+                  className="text-neutral-700"
+                />
+
                 <span>Delhi-NCR / Haryana, India</span>
               </div>
-              <span className="hidden sm:inline text-neutral-300">•</span>
+
+              <span className="hidden text-neutral-300 sm:inline">
+                •
+              </span>
+
               <div className="flex items-center gap-2">
-                <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-emerald-700 font-semibold">Open for SDE Roles</span>
+                <span className="h-2 w-2 animate-pulse rounded-full bg-emerald-500" />
+
+                <span className="font-semibold text-emerald-700">
+                  Open for SDE Roles
+                </span>
               </div>
             </div>
 
-            {/* Buttons */}
-<div className="mt-10 flex flex-wrap items-center gap-4">
+            {/* ================= BUTTONS ================= */}
+            <div className="mt-10 flex flex-wrap items-center gap-4">
 
-{/* View Projects (Styled like Résumé button) */}
-<a
-  href="#projects"
-  className="group inline-flex items-center gap-3 rounded-full border-2 border-neutral-900 bg-white px-7 py-4 text-base font-bold text-neutral-900 transition-all duration-200 hover:-translate-y-1 hover:bg-neutral-900 hover:text-white hover:shadow-lg active:scale-95 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900"
->
-  View Projects
-  <ArrowUpRight
-    size={18}
-    className="transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1"
-  />
-</a>
+              {/* View Projects */}
+              <a
+                href="#projects"
+                className="group inline-flex items-center gap-3 rounded-full border-2 border-neutral-900 bg-white px-7 py-4 text-base font-bold text-neutral-900 transition-all duration-200 hover:-translate-y-1 hover:bg-white hover:text-neutral-900 hover:shadow-lg active:translate-y-0 active:scale-95 active:bg-white active:text-neutral-900 focus:bg-white focus:text-neutral-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900"
+              >
+                View Projects
 
-{/* Resume */}
-<a
-  href={resume}
-  download="AnushikaKapoor_Resume.pdf"
-  target="_blank"
-  rel="noreferrer"
-  className="group inline-flex items-center gap-3 rounded-full border-2 border-neutral-900 bg-white px-7 py-4 text-base font-bold text-neutral-900 transition-all duration-200 hover:-translate-y-1 hover:bg-neutral-900 hover:text-white hover:shadow-lg active:scale-95 active:translate-y-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900"
->
-  <Download
-    size={18}
-    className="transition-transform duration-200 group-hover:translate-y-0.5"
-  />
-  Résumé
-</a>
+                <ArrowUpRight
+                  size={18}
+                  className="transition-transform duration-200 group-hover:translate-x-1 group-hover:-translate-y-1"
+                />
+              </a>
 
-</div>
-            {/* Social links */}
+              {/* Résumé */}
+              <a
+                href={resume}
+                download="AnushikaKapoor_Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="group inline-flex items-center gap-3 rounded-full border-2 border-neutral-900 bg-white px-7 py-4 text-base font-bold text-neutral-900 transition-all duration-200 hover:-translate-y-1 hover:bg-white hover:text-neutral-900 hover:shadow-lg active:translate-y-0 active:scale-95 active:bg-white active:text-neutral-900 focus:bg-white focus:text-neutral-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900"
+              >
+                <Download
+                  size={18}
+                  className="transition-transform duration-200 group-hover:translate-y-0.5"
+                />
+
+                Résumé
+              </a>
+            </div>
+
+            {/* ================= SOCIAL LINKS ================= */}
             <div className="mt-10 flex items-center gap-5">
 
               {/* GitHub */}
@@ -140,6 +165,7 @@ export default function Hero() {
                   icon={faGithub}
                   className="text-lg"
                 />
+
                 GitHub
               </a>
 
@@ -156,13 +182,13 @@ export default function Hero() {
                   icon={faLinkedinIn}
                   className="text-lg"
                 />
+
                 LinkedIn
               </a>
-
             </div>
           </div>
 
-          {/* RIGHT SIDE - PROFILE */}
+          {/* ================= RIGHT SIDE - PROFILE ================= */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
 
@@ -188,13 +214,11 @@ export default function Hero() {
                   Full-Stack & AI Systems
                 </p>
               </div>
-
             </div>
           </div>
-
         </div>
 
-        {/* Explore */}
+        {/* ================= EXPLORE ================= */}
         <a
           href="#projects"
           className="mt-24 flex w-fit items-center gap-4 rounded-sm text-neutral-600 transition-colors hover:text-neutral-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-neutral-900"
@@ -208,7 +232,6 @@ export default function Hero() {
             className="animate-bounce"
           />
         </a>
-
       </div>
     </section>
   );
