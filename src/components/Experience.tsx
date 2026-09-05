@@ -2,9 +2,6 @@ import {
   BriefcaseBusiness,
   CalendarDays,
   Sparkles,
-  Layers,
-  
-  TrendingUp,
 } from "lucide-react";
 
 export default function Experience() {
@@ -32,16 +29,15 @@ export default function Experience() {
           </div>
 
           <p className="max-w-xl text-base font-medium leading-7 text-neutral-700 sm:text-lg">
-            Practical experience engineering data-driven platforms, designing automated
-            SQL pipelines, and deploying interactive intelligence dashboards for enterprise analytics.
+            Practical experience working on data analysis, business
+            intelligence, and data-driven analytical workflows.
           </p>
         </div>
-
 
         {/* ================= EXPERIENCE CARD ================= */}
         <div className="mt-14 rounded-[28px] border-2 border-neutral-200 bg-white p-7 shadow-sm transition-all duration-300 hover:border-neutral-900 hover:shadow-xl sm:p-9 lg:p-10">
 
-          {/* Top Row: Title, Company & Date */}
+          {/* Top Row */}
           <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
             <div className="flex items-start gap-5">
               <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-neutral-900 text-white shadow-md">
@@ -51,9 +47,11 @@ export default function Experience() {
               <div>
                 <div className="flex items-center gap-2">
                   <span className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-neutral-600">
-                    Engineering Internship
+                    Industry Internship
                   </span>
+
                   <span className="text-neutral-300">•</span>
+
                   <span className="flex items-center gap-1 font-mono text-xs font-semibold text-emerald-700">
                     <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
                     Remote
@@ -77,40 +75,30 @@ export default function Experience() {
             </span>
           </div>
 
-
           {/* Divider */}
           <div className="my-8 h-[2px] bg-neutral-100" />
 
-
-          {/* Main Grid: Project Highlight + Key Contributions */}
+          {/* Main Content */}
           <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-12">
 
-            {/* Left Box: Project Callout */}
-            <div className="flex flex-col justify-between rounded-2xl border-2 border-neutral-200 bg-[#f8f7f3] p-6">
-              <div>
-                <div className="flex items-center gap-2 text-neutral-950 font-bold text-base mb-2">
-                  <TrendingUp size={18} className="text-neutral-800" />
-                  <span>Financial Intelligence Dashboard</span>
-                </div>
+            {/* Left Box */}
+            <div className="rounded-2xl border-2 border-neutral-200 bg-[#f8f7f3] p-6">
+              <p className="font-mono text-xs font-bold uppercase tracking-[0.16em] text-neutral-600">
+                Role Focus
+              </p>
 
-                <p className="text-sm font-medium leading-relaxed text-neutral-600">
-                  Architected an enterprise screening and equity valuation engine for benchmark enterprise stocks, processing structured financial datasets into modular analytical reports.
-                </p>
-              </div>
+              <h4 className="mt-3 text-xl font-black text-neutral-950">
+                Data Analytics & Business Intelligence
+              </h4>
 
-              <div className="mt-6 pt-4 border-t border-neutral-200/80">
-                <div className="flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-wider text-neutral-700">
-                  <Layers size={14} className="text-neutral-800" />
-                  <span>8 Modular Analytics Engines</span>
-                </div>
-                <p className="mt-1 text-xs font-medium text-neutral-500">
-                  Company Profile, Screener, Peers, Trend, Sector & Valuation.
-                </p>
-              </div>
+              <p className="mt-3 text-sm font-medium leading-relaxed text-neutral-600">
+                Contributed to data analytics and business intelligence
+                initiatives involving structured datasets, analysis,
+                visualization, and data-driven insights.
+              </p>
             </div>
 
-
-            {/* Right Column: Key Accomplishments */}
+            {/* Right Column */}
             <div>
               <p className="mb-4 font-mono text-xs font-bold uppercase tracking-[0.16em] text-neutral-600">
                 Key Responsibilities & Impact
@@ -120,54 +108,54 @@ export default function Experience() {
                 <li className="flex items-start gap-3.5 text-sm font-medium leading-relaxed text-neutral-700">
                   <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-neutral-900" />
                   <span>
-                    Architected an end-to-end dashboard analyzing{" "}
+                    Applied <strong className="font-bold text-neutral-950">Python</strong>
+                    {" "}and data analysis techniques for processing,
+                    transforming, and analyzing structured datasets.
+                  </span>
+                </li>
+
+                <li className="flex items-start gap-3.5 text-sm font-medium leading-relaxed text-neutral-700">
+                  <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-neutral-900" />
+                  <span>
+                    Contributed to{" "}
                     <strong className="font-bold text-neutral-950">
-                      92 Nifty 100 benchmark companies
-                    </strong>{" "}
-                    with real-time financial screenings.
+                      data-driven analytical workflows
+                    </strong>
+                    {" "}supporting research and business intelligence.
                   </span>
                 </li>
 
                 <li className="flex items-start gap-3.5 text-sm font-medium leading-relaxed text-neutral-700">
                   <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-neutral-900" />
                   <span>
-                    Engineered automated <strong className="font-bold text-neutral-950">SQL ETL pipelines</strong> to ingest, clean, and integrate multi-year financial statements for instant query execution.
+                    Worked with databases and visualization tools to
+                    organize and communicate analytical insights.
                   </span>
                 </li>
 
                 <li className="flex items-start gap-3.5 text-sm font-medium leading-relaxed text-neutral-700">
                   <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-neutral-900" />
                   <span>
-                    Implemented core financial valuation metrics including <strong className="font-bold text-neutral-950">ROE, OPM, Debt-to-Equity, and CAGR</strong> with interactive Plotly graphs.
-                  </span>
-                </li>
-
-                <li className="flex items-start gap-3.5 text-sm font-medium leading-relaxed text-neutral-700">
-                  <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-neutral-900" />
-                  <span>
-                    Boosted app responsiveness through <strong className="font-bold text-neutral-950">cached SQLite queries</strong> and reusable computational modules.
+                    Improved analytical workflows through reusable
+                    components and efficient data processing.
                   </span>
                 </li>
               </ul>
             </div>
-
           </div>
 
-
-          {/* Technology Stack Footer */}
+          {/* Technology Stack */}
           <div className="mt-9 flex flex-col gap-4 border-t-2 border-neutral-100 pt-7 sm:flex-row sm:items-center">
             <p className="shrink-0 font-mono text-xs font-bold uppercase tracking-[0.16em] text-neutral-600">
-              Technologies Used
+              Skills Applied
             </p>
 
             <div className="flex flex-wrap gap-2">
               {[
                 "Python",
-                "Streamlit",
-                "SQLite",
-                "Pandas",
-                "Plotly",
-                "SQL ETL",
+                "Data Analysis",
+                "SQL",
+                "Data Visualization",
               ].map((technology) => (
                 <span
                   key={technology}
@@ -178,17 +166,15 @@ export default function Experience() {
               ))}
             </div>
           </div>
-
         </div>
-
 
         {/* ================= BOTTOM STATUS ================= */}
         <div className="mt-12 flex items-center justify-between border-t border-neutral-200/80 pt-6">
           <p className="font-mono text-xs font-semibold uppercase tracking-[0.16em] text-neutral-600">
-            Enterprise Dashboards · Data Engineering · Quantitative Analytics
+            Data Analytics · Business Intelligence · Data Engineering
           </p>
 
-          <span className="hidden sm:block h-[2px] w-24 bg-neutral-300" />
+          <span className="hidden h-[2px] w-24 bg-neutral-300 sm:block" />
         </div>
 
       </div>
