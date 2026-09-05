@@ -98,41 +98,4 @@ export const projects: Project[] = [
 
     featured: true,
   },
-
-  {
-    id: "financial-intelligence",
-    number: "03",
-    title: "Financial Intelligence Dashboard",
-    category: "Data · Analytics",
-
-    description:
-      "An analytics platform built during my Data Science internship to screen and compare 92 Nifty 100 companies.",
-
-    problem:
-      "Financial datasets can become difficult to compare when information is spread across multiple sources and analytical workflows.",
-
-    solution:
-      "Designed an SQL-based data pipeline and modular Streamlit dashboard covering financial screening, comparisons, trends, and valuation metrics.",
-
-    highlights: [
-      "Screening across 92 Nifty 100 companies",
-      "SQL-based ETL pipeline",
-      "Eight modular analytics components",
-      "ROE and OPM analysis",
-      "Debt-to-Equity analysis",
-      "CAGR and valuation screening",
-      "Interactive Plotly visualizations",
-    ],
-
-    technologies: [
-      "Python",
-      "Streamlit",
-      "SQLite",
-      "Pandas",
-      "Plotly",
-      "SQL",
-    ],
-
-    featured: true,
-  },
 ];
