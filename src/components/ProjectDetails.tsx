@@ -64,19 +64,21 @@ export default function ProjectDetails({
 
             {/* ================= PROJECT LINKS ================= */}
             <div className="mt-7 flex flex-wrap gap-3">
+              {/* LIVE DEMO */}
               {project.liveDemo && (
                 <a
                   href={project.liveDemo}
                   target="_blank"
                   rel="noreferrer"
                   onClick={(e) => e.stopPropagation()}
-                  className="inline-flex items-center gap-2.5 rounded-full border-2 border-neutral-900 bg-neutral-900 px-5 py-3 text-sm font-bold text-white shadow-sm transition-all duration-200 hover:bg-white hover:text-neutral-950 hover:shadow-md"
+                  className="inline-flex items-center gap-2.5 rounded-full border-2 border-neutral-900 bg-white px-5 py-3 text-sm font-bold text-neutral-950 shadow-sm transition-all duration-200 hover:bg-neutral-900 hover:text-white hover:shadow-md"
                 >
                   Live Demo
                   <ArrowUpRight size={16} />
                 </a>
               )}
 
+              {/* GITHUB */}
               {project.github && (
                 <a
                   href={project.github}
@@ -175,6 +177,7 @@ export default function ProjectDetails({
             </p>
 
             <div className="flex flex-wrap gap-3">
+              {/* OPEN LIVE DEMO */}
               {project.liveDemo && (
                 <a
                   href={project.liveDemo}
@@ -188,6 +191,7 @@ export default function ProjectDetails({
                 </a>
               )}
 
+              {/* VIEW SOURCE */}
               {project.github && (
                 <a
                   href={project.github}
