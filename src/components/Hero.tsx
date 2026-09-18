@@ -12,7 +12,7 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
-import resume from "../assets/AnushikaKapoor_Resume.pdf";
+import resume from "../assets/Anushika_Kapoor_Resume.pdf";
 import profile from "../assets/image.png";
 
 const highlights = [
