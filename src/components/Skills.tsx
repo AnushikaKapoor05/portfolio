@@ -49,6 +49,7 @@ const skillGroups = [
       "Firestore",
       "Pandas",
       "NumPy",
+      "Tableau",
       "Plotly",
       "Streamlit",
     ],

@@ -98,4 +98,48 @@ export const projects: Project[] = [
 
     featured: true,
   },
+
+  {
+    id: "urbanpulse-mobility",
+    number: "03",
+    title: "UrbanPulse Mobility Analytics",
+    category: "Data Analytics · Business Intelligence",
+
+    description:
+      "An end-to-end urban mobility and fleet analytics platform analyzing 6,800+ bookings across 18 metro zones to diagnose revenue leakage, driver cancellations, and EV fleet economics.",
+
+    problem:
+      "Urban mobility platforms face significant revenue loss during peak hours due to driver cancellations, dynamic surge pricing friction, and unoptimized ICE vs. EV fleet unit economics.",
+
+    solution:
+      "Engineered production SQL analytical models (CTEs, window functions), automated Python data auditing & MIS pipelines, an interactive web dashboard, and executive Tableau visualizations.",
+
+    highlights: [
+      "Deployed interactive analytics dashboard on Render with real-time KPI filters",
+      "Evaluated 6,800 bookings across Delhi-NCR, Bengaluru, and Mumbai",
+      "Diagnosed ₹9.56 Lakh in lost Gross Booking Value & 52% driver cancellations",
+      "7 production SQL modules with CTEs, DENSE_RANK(), and LAG() window functions",
+      "Surge pricing elasticity modeling across 1.1x–1.8x+ multiplier tiers",
+      "Quantified EV economics: ₹1.20/km vs ₹4.80/km petrol (75% savings & 5.82t CO₂ avoided)",
+      "Automated Python data quality auditor and daily operations MIS compiler",
+    ],
+
+    technologies: [
+      "SQL",
+      "Python",
+      "Tableau",
+      "Business Intelligence",
+      "Data Analytics",
+      "JavaScript",
+      "Tailwind CSS",
+    ],
+
+    github:
+      "https://github.com/AnushikaKapoor05/urbanpulse-mobility-analytics",
+
+    liveDemo:
+      "https://urbanpulse-mobility-analytics.onrender.com/",
+
+    featured: true,
+  },
 ];
